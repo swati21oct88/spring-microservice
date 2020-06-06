@@ -29,6 +29,7 @@ public class Product {
 	private double productPrice;
 	
 	public Product(ProductType productType,double productPrice) {
+		super();
 		this.productType = productType;
 		this.productPrice = productPrice;
 		

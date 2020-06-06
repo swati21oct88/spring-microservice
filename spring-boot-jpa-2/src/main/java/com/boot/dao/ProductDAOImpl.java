@@ -41,4 +41,12 @@ public class ProductDAOImpl implements ProductDAO {
 		Session session = entityManager.unwrap(Session.class);
 		session.persist(product);
 	}
+
+	@Override
+	@Transactional
+	public Product getCreatedProduct(Product product) {
+		Session session = entityManager.unwrap(Session.class);
+		session.persist(product);
+		return product;
+	}
 }
