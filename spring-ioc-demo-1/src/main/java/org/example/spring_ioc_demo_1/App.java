@@ -11,8 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App 
 {
     public static void main( String[] args )
-    {
-    	
+    {    	
 		try {
 			ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 			Coach coach = applicationContext.getBean("theCoach",Coach.class);
