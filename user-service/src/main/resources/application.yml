@@ -6,6 +6,8 @@ eureka:
     service-url:
       defaultZone:
         http://localhost:8761/eureka
+  instance:
+    instance-id: user-ws:${random.value}
 spring:
   application:
     name: user-service
