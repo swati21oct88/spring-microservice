@@ -12,6 +12,10 @@ spring:
       enabled: true
   application:
     name: account-service
+  boot:
+    admin:
+      client:
+        url: http://localhost:8763
 eureka:
   client:
     register-with-eureka: true
