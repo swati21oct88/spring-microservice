@@ -15,13 +15,13 @@ public class UserController {
 	
 	@Autowired
 	public UserController(Environment env) {
+		super();
 		this.env = env;
 	}
 	
 	@GetMapping("/status/check")
-	@LoadBalanced
 	public String check() {
-		return "user service working" + env.getProperty("local.server.port");
+		return "user service working " + env.getProperty("local.server.port");
 	}
 
 }
